@@ -1,0 +1,120 @@
+/* Variables de colores */
+:root {
+  --primary: #005a9c;
+  --secondary: #ed6e00;
+  --light: #f9f9f9;
+  --dark: #333;
+  --radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: var(--primary);
+  color: white;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.header .nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('../imagenes/hero-bg.jpg') no-repeat center/cover;
+  color: white;
+}
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Servicios */
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.servicio {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.btn-small {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Noticias */
+.noticias h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.noticia {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: var(--radius);
+}
+.noticia img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+.noticia h3 {
+  margin: 10px 0;
+}
+.leer-mas {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
